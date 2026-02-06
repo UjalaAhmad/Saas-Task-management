@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { TasksController } from './tasks.controller';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Task, TaskSchema } from 'src/schema/task.schema';
+import { Task, TaskSchema } from '../schema/task.schema';
 
 @Module({
 imports:[MongooseModule.forFeature([{name:Task.name,schema:TaskSchema}])],
