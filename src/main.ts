@@ -6,7 +6,6 @@ async function bootstrap() {
 
   app.enableCors({
   origin: [
-    'http://localhost:3001',
     'https://saas-taskmanagement-frontend.vercel.app',
   ],
   credentials: true,
